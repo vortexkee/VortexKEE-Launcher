@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Vortex Launcher Dynamic Theme System (data-theme + RGB CSS Variables)
+   Default theme: patrick-jane (The Mentalist inspired anthracite, warm amber,
+   cream-white typography, subtle burgundy details)
+   ========================================================================== */
+
+:root,
+[data-theme='patrick-jane'] {
+  color-scheme: dark;
+  --bg-base: 20 23 31;          /* #14171F */
+  --bg-panel: 28 32 43;         /* #1C202B */
+  --bg-elevated: 36 41 56;      /* #242938 */
+  --bg-hover: 45 51 69;         /* #2D3345 */
+  --text-primary: 244 239 230;  /* #F4EFE6 */
+  --text-secondary: 203 196 184;/* #CBC4B8 */
+  --text-muted: 148 142 132;    /* #948E84 */
+  --accent: 212 163 89;         /* #D4A359 */
+  --accent-strong: 229 186 115; /* #E5BA73 */
+  --accent-fg: 20 23 31;        /* #14171F */
+  --secondary: 184 59 59;       /* #B83B3B */
+  --border: 52 58 76;           /* #343A4C */
+  --border-strong: 74 82 106;   /* #4A526A */
+  --hero-glow-a: rgba(212, 163, 89, 0.22);
+  --hero-glow-b: rgba(184, 59, 59, 0.16);
+}
+
+[data-theme='cyber-neon'] {
+  color-scheme: dark;
+  --bg-base: 10 13 20;          /* #0A0D14 */
+  --bg-panel: 17 22 35;         /* #111623 */
+  --bg-elevated: 24 32 51;      /* #182033 */
+  --bg-hover: 32 43 68;         /* #202B44 */
+  --text-primary: 236 248 255;  /* #ECF8FF */
+  --text-secondary: 168 197 220;
+  --text-muted: 106 132 162;
+  --accent: 0 240 255;          /* #00F0FF */
+  --accent-strong: 86 247 255;
+  --accent-fg: 8 15 24;
+  --secondary: 255 42 133;      /* #FF2A85 */
+  --border: 36 52 82;
+  --border-strong: 56 84 128;
+  --hero-glow-a: rgba(0, 240, 255, 0.20);
+  --hero-glow-b: rgba(255, 42, 133, 0.18);
+}
+
+[data-theme='astral-void'] {
+  color-scheme: dark;
+  --bg-base: 13 10 24;          /* #0D0A18 */
+  --bg-panel: 22 17 41;         /* #161129 */
+  --bg-elevated: 32 25 58;      /* #20193A */
+  --bg-hover: 44 35 79;
+  --text-primary: 243 238 255;  /* #F3EEFF */
+  --text-secondary: 196 184 226;
+  --text-muted: 136 122 172;
+  --accent: 168 85 247;         /* #A855F7 */
+  --accent-strong: 192 132 252;
+  --accent-fg: 255 255 255;
+  --secondary: 244 114 182;     /* #F472B6 */
+  --border: 52 40 88;
+  --border-strong: 82 64 134;
+  --hero-glow-a: rgba(168, 85, 247, 0.24);
+  --hero-glow-b: rgba(244, 114, 182, 0.16);
+}
+
+[data-theme='emerald-grove'] {
+  color-scheme: dark;
+  --bg-base: 13 22 18;          /* #0D1612 */
+  --bg-panel: 20 34 28;         /* #14221C */
+  --bg-elevated: 28 47 39;      /* #1C2F27 */
+  --bg-hover: 36 60 50;
+  --text-primary: 236 245 238;  /* #ECF5EE */
+  --text-secondary: 184 208 192;
+  --text-muted: 122 152 134;
+  --accent: 46 204 113;         /* #2ECC71 */
+  --accent-strong: 88 224 146;
+  --accent-fg: 10 24 16;
+  --secondary: 200 155 84;      /* #C89B54 */
+  --border: 39 66 54;
+  --border-strong: 58 98 80;
+  --hero-glow-a: rgba(46, 204, 113, 0.20);
+  --hero-glow-b: rgba(200, 155, 84, 0.16);
+}
+
+[data-theme='arctic-paper'] {
+  color-scheme: light;
+  --bg-base: 246 244 239;       /* #F6F4EF */
+  --bg-panel: 255 255 255;      /* #FFFFFF */
+  --bg-elevated: 237 233 224;   /* #EDE9E0 */
+  --bg-hover: 226 221 210;
+  --text-primary: 24 28 36;     /* #181C24 */
+  --text-secondary: 68 74 88;
+  --text-muted: 112 118 132;
+  --accent: 37 99 235;          /* #2563EB */
+  --accent-strong: 29 78 216;
+  --accent-fg: 255 255 255;
+  --secondary: 194 65 12;       /* #C2410C */
+  --border: 214 208 196;
+  --border-strong: 184 176 162;
+  --hero-glow-a: rgba(37, 99, 235, 0.14);
+  --hero-glow-b: rgba(194, 65, 12, 0.11);
+}
+
+[data-theme='crimson-obsidian'] {
+  color-scheme: dark;
+  --bg-base: 18 14 16;          /* #120E10 */
+  --bg-panel: 28 21 24;         /* #1C1518 */
+  --bg-elevated: 40 29 33;      /* #281D21 */
+  --bg-hover: 54 38 44;
+  --text-primary: 247 239 239;  /* #F7EFEF */
+  --text-secondary: 208 186 188;
+  --text-muted: 148 122 126;
+  --accent: 239 68 68;          /* #EF4444 */
+  --accent-strong: 248 113 113;
+  --accent-fg: 255 255 255;
+  --secondary: 245 158 11;      /* #F59E0B */
+  --border: 66 44 50;
+  --border-strong: 98 62 72;
+  --hero-glow-a: rgba(239, 68, 68, 0.22);
+  --hero-glow-b: rgba(245, 158, 11, 0.16);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(var(--bg-base));
+    color: rgb(var(--text-primary));
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+
+  ::selection {
+    background-color: rgb(var(--accent) / 0.28);
+    color: rgb(var(--text-primary));
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--bg-base));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--border-strong) / 0.65);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--accent) / 0.75);
+  }
+}
+
+.titlebar-drag {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.titlebar-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.vortex-hero-backdrop {
+  background:
+    radial-gradient(620px circle at 18% 20%, var(--hero-glow-a), transparent 62%),
+    radial-gradient(520px circle at 84% 78%, var(--hero-glow-b), transparent 60%),
+    linear-gradient(150deg, rgb(var(--bg-panel) / 0.96) 0%, rgb(var(--bg-base) / 0.98) 100%);
+}
+
+/* Custom Range Slider */
+input[type='range'].vortex-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type='range'].vortex-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: rgb(var(--bg-elevated));
+  border: 1px solid rgb(var(--border));
+}
+
+input[type='range'].vortex-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border-radius: 9999px;
+  background: rgb(var(--accent));
+  border: 2px solid rgb(var(--bg-base));
+  box-shadow: 0 0 0 2px rgb(var(--accent) / 0.25);
+  cursor: pointer;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+input[type='range'].vortex-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  background: rgb(var(--accent-strong));
+}
